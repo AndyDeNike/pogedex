@@ -7,7 +7,7 @@ import gql from "graphql-tag";
 
 const GET_POKEMON_INFO = gql`
   {
-    pokemons(first: 150) {
+    pokemons(first: 151) {
       id
       number
       name
@@ -30,9 +30,9 @@ function App() {
 
   return (
     <React.Fragment>
-      <h1>Pokémons</h1>
+      <h1>Pogédex</h1>
 
-      <p>
+      {/* <p>
         <a href="https://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon">
           The Pokémon franchise
         </a>{" "}
@@ -42,7 +42,7 @@ function App() {
         This is the list of the first 150 Pokémon as they appear in Pokémon
         Stadium, starting with Bulbasaur in the top left corner and ending with
         Mewtwo in the bottom right corner.
-      </p>
+      </p> */}
       <div className="container">
         {data &&
           data.pokemons &&
